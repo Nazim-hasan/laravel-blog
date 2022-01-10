@@ -21,7 +21,7 @@ Route::get('/', function () {
 // Route::get('/user/{name}', function ($name) {
 //     return view('users',["name"=>$name]);
 // });
-// Route::get('users',[UsersController::class,'loadView']);
+Route::get('users',[UsersController::class,'ShowUsers']);
 Route::get('users/{user}',[UsersController::class,'loadView']);
 
 // Route::view("user","users");
@@ -29,4 +29,4 @@ Route::get('users/{user}',[UsersController::class,'loadView']);
 // Route::get("user/{id}",[UserController::class,'show']);
 
 Route::get("/products",[Products::class,'showProducts']);
-Route::view("users","users");
+// Route::view("users","users");

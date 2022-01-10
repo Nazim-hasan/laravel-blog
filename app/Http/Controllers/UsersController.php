@@ -10,4 +10,8 @@ class UsersController extends Controller
     function loadView($user){
         return view("users",['name'=>$user]);
     }
+    function ShowUsers(){
+        $data=['Nazim', 'Tasnim', 'Akash' ,'Shaikat'];
+        return view("users",['users'=>$data]);
+    }
 }
